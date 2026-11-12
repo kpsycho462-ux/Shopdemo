@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="my">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f6fb">
+  <meta name="description" content="ဆိုင်စာရင်း အခမဲ့အသုံးပြုနိုင်မှုနှင့် အဆင့်မြင့်အစီအစဉ်အကြောင်း သိရှိရန်။">
+  <title>ဆိုင်စာရင်း — အစီအစဉ်ရွေးချယ်ရန်</title>
+  <style>
+    :root{--bg:#f6f7fc;--surface:#fff;--ink:#20243a;--muted:#727990;--line:#e7e9f1;--brand:#6257df;--brand2:#8277ec;--brand-soft:#f0eeff;--green:#168b65;--green-soft:#e8f6f0;--amber:#a86b13;--amber-soft:#fff5df;--shadow:0 16px 42px rgba(36,42,82,.07);--radius:22px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans Myanmar","Padauk",sans-serif;line-height:1.65}a{color:inherit}a:focus-visible{outline:3px solid #6257df66;outline-offset:3px;border-radius:8px}.wrap{width:min(1080px,calc(100% - 36px));margin:auto}.top{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:800}.brandmark{width:40px;height:40px;display:grid;place-items:center;border-radius:14px;color:#fff;background:linear-gradient(145deg,var(--brand),var(--brand2));box-shadow:0 8px 18px #6257df30}.brand small{display:block;color:var(--muted);font-weight:500;font-size:11px;margin-top:-2px}.nav{display:flex;gap:23px;align-items:center}.nav a{text-decoration:none;color:var(--muted);font-size:13px;font-weight:650}.nav a:hover{color:var(--brand)}.hero{position:relative;overflow:hidden;margin:20px auto 24px;padding:58px 54px;border-radius:30px;background:linear-gradient(118deg,#554bd0,#776de8 65%,#988ff3);color:white;box-shadow:0 22px 52px #6257df25}.hero:before,.hero:after{content:"";position:absolute;border:1px solid #ffffff25;border-radius:50%;pointer-events:none}.hero:before{width:370px;height:370px;right:-100px;top:-245px;box-shadow:0 0 0 35px #ffffff09,0 0 0 70px #ffffff07}.hero:after{width:190px;height:190px;right:17%;bottom:-155px}.hero-copy{position:relative;z-index:1;max-width:700px}.eyebrow{display:inline-flex;align-items:center;gap:7px;padding:6px 11px;border:1px solid #ffffff4a;border-radius:99px;background:#ffffff14;color:#f3f1ff;font-size:11px;font-weight:700}.hero h1{margin:17px 0 10px;font-size:clamp(29px,4vw,43px);line-height:1.3;letter-spacing:-.04em}.hero p{max-width:620px;margin:0;color:#eeecff;font-size:15px}.hero-meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.hero-meta span{padding:7px 11px;border-radius:10px;background:#ffffff19;color:#f3f1ff;font-size:11px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin:39px 0 17px}.section-head h2{margin:0;font-size:23px;letter-spacing:-.03em}.section-head p{margin:5px 0 0;color:var(--muted);font-size:13px}.section-tag{padding:7px 10px;border:1px solid var(--line);border-radius:99px;background:#fff;color:var(--muted);font-size:11px;white-space:nowrap}.plans{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px;align-items:stretch}.plan{position:relative;padding:25px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);box-shadow:var(--shadow)}.plan.premium{border-color:#d9d3ff;background:linear-gradient(180deg,#fbfaff 0%,#fff 200px);box-shadow:0 18px 46px #6257df14}.plan-title{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}.plan-title h3{margin:0;font-size:21px;letter-spacing:-.025em}.plan-title p{margin:4px 0 0;color:var(--muted);font-size:12px}.badge{padding:6px 10px;border-radius:99px;background:#f0efff;color:#5b50d6;font-size:10px;font-weight:800;white-space:nowrap}.premium .badge{color:#fff;background:linear-gradient(135deg,#6459e5,#8c78ed)}.price{margin:21px 0 4px;font-size:28px;font-weight:850;letter-spacing:-.04em}.price-sub{min-height:24px;color:var(--muted);font-size:11px}.limit-box{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:20px 0;padding:12px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.limit{padding:9px;border-radius:12px;background:#f8f8fc}.limit strong{display:block;font-size:15px}.limit span{color:var(--muted);font-size:10px}.list-title{margin:19px 0 10px;font-size:12px;font-weight:800}.features{display:grid;gap:9px;margin:0;padding:0;list-style:none}.features li{display:flex;align-items:flex-start;gap:9px;color:#4e556b;font-size:12px}.check,.pending{flex:0 0 19px;width:19px;height:19px;margin-top:1px;display:grid;place-items:center;border-radius:7px;background:var(--green-soft);color:var(--green);font-size:11px;font-weight:900}.pending{background:var(--amber-soft);color:var(--amber)}.status-label{display:inline-block;margin-left:5px;padding:2px 6px;border-radius:99px;background:var(--amber-soft);color:var(--amber);font-size:9px;font-weight:750;white-space:nowrap}.plan-note{margin-top:17px;padding:11px 12px;border-radius:12px;background:#f8f8fc;color:var(--muted);font-size:10px;line-height:1.7}.premium .plan-note{background:#f2f0ff;color:#625a9d}.cta{display:flex;min-height:45px;width:100%;align-items:center;justify-content:center;gap:8px;margin-top:17px;padding:10px 14px;border:1px solid var(--brand);border-radius:12px;background:var(--brand);color:#fff;text-decoration:none;text-align:center;font-size:12px;font-weight:800;transition:.16s}.cta:hover{transform:translateY(-1px);box-shadow:0 9px 20px #6257df2c}.premium .cta{background:#fff;color:var(--brand);border-color:#d7d2ff}.premium .cta:hover{background:var(--brand-soft)}.notice{display:flex;align-items:flex-start;gap:11px;margin-top:17px;padding:14px 16px;border:1px solid #f0dfb9;border-radius:14px;background:#fffaf0;color:#75561e;font-size:11px}.notice b{color:#65440b}.notice-icon{font-size:15px}.faq{display:grid;grid-template-columns:1fr 1fr;gap:12px}.faq article{padding:17px;border:1px solid var(--line);border-radius:15px;background:#fff}.faq h3{margin:0 0 6px;font-size:13px}.faq p{margin:0;color:var(--muted);font-size:11px}.closing{margin:38px 0 22px;padding:18px 20px;border-radius:15px;background:#f0efff;color:#5149ad;font-size:11px;line-height:1.8}.closing strong{color:#3d368d}footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:17px 0 28px;border-top:1px solid var(--line);color:var(--muted);font-size:10px}
+    @media(max-width:700px){.wrap{width:min(100% - 26px,550px)}.top{height:64px}.nav{gap:12px}.nav a{font-size:11px}.hero{margin-top:12px;padding:35px 23px;border-radius:23px}.hero p{font-size:13px}.section-head{align-items:flex-start;flex-direction:column;gap:8px;margin-top:30px}.plans{grid-template-columns:1fr}.plan{padding:20px}.faq{grid-template-columns:1fr}}
+    @media(max-width:410px){.brand{font-size:13px}.brandmark{width:36px;height:36px}.hero h1{font-size:28px}.plan-title h3{font-size:19px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+  
+    .offline-note{display:flex;align-items:flex-start;gap:10px;padding:13px 14px;margin-bottom:16px;border:1px solid #c9d8fb;border-radius:14px;background:#f1f6ff;color:#344568;font-size:10px;line-height:1.7}
+    .offline-note strong{color:#26395f}.offline-note p{margin:3px 0 0}.offline-note p+p{font-weight:700;color:#5148c7}
+</style>
+</head>
+<body>
+  <header class="top wrap">
+    <a class="brand" href="#top" aria-label="အစီအစဉ်များ အပေါ်ဆုံးသို့"><span class="brandmark" aria-hidden="true">ဆ</span><span>ဆိုင်စာရင်း<small>သင့်ဆိုင်ကို စနစ်တကျ စီမံပါ</small></span></a>
+    <nav class="nav" aria-label="စာမျက်နှာမီနူး"><a href="#plans">အစီအစဉ်များ</a><a href="#faq">မေးလေ့ရှိသည်များ</a></nav>
+  </header>
+  <main id="top" class="wrap">
+    <section class="hero"><div class="hero-copy"><span class="eyebrow">ဆိုင်လုပ်ငန်းအတွက် ရိုးရှင်းသော စာရင်းစီမံမှု</span><h1>သင့်ဆိုင်စာရင်းကို ဒီနေ့ပဲ စတင်မှတ်တမ်းတင်ပါ</h1><p>အခမဲ့အစီအစဉ်ကို ချက်ချင်းအသုံးပြုနိုင်ပါတယ်။ အဆင့်မြင့်အစီအစဉ်အကြောင်း သိလိုပါက စုံစမ်းနိုင်ပေမယ့် ဈေးနှုန်းနဲ့ ငွေပေးချေမှုကို သတ်မှတ်ပြီးမှသာ ဝယ်ယူမှုကို ဆက်လုပ်နိုင်ပါမယ်။</p><div class="hero-meta"><span>အခမဲ့ စတင်အသုံးပြုနိုင်သည်</span><span>ဖုန်းနှင့် ကွန်ပျူတာတွင် အသုံးပြုနိုင်သည်</span><span>ဈေးနှုန်းကို ရှင်းလင်းစွာ ဖော်ပြထားသည်</span></div></div></section>
+
+  <aside class="offline-note" role="note"><span aria-hidden="true">ⓘ</span><div><strong>အင်တာနက်မရှိချိန် အသုံးပြုရန်</strong><p>အင်တာနက်ရှိစဉ် အစီအစဉ်စာမျက်နှာနှင့် အခမဲ့စာရင်းစာမျက်နှာကို ဖွင့်ပြီး အောက်တွင် “စာမျက်နှာနှစ်ခုလုံး သိမ်းပြီးပါပြီ” ဟုပေါ်သည်အထိ စောင့်ပါ။ ပြီးမှ အင်တာနက်မရှိဘဲ ပြန်ဖွင့်နိုင်ပါသည်။ စာရင်းဒေတာသည် ဤဘရောက်ဇာနှင့် စက်ထဲတွင်သာ သိမ်းဆည်းပြီး စက်များအကြား အလိုအလျောက်မကူးပါ၊ အွန်လိုင်းအရန်သိမ်းမှုလည်း မရှိပါ။</p><p id="offlineCacheStatus" aria-live="polite">အွန်လိုင်းရှိစဉ်ဖွင့်ပြီး သိမ်းဆည်းမှု ပြီးဆုံးသည်ကို စောင့်ပါ။</p></div></aside>
+    <section id="plans" aria-labelledby="planHeading"><div class="section-head"><div><h2 id="planHeading">သင့်အတွက် အစီအစဉ်ရွေးပါ</h2><p>ယခုအသုံးပြုနိုင်သောအရာနှင့် စီစဉ်ဆဲအရာများကို ခွဲခြားဖော်ပြထားပါတယ်။</p></div><span class="section-tag">ရွေးချယ်ရန်</span></div>
+      <div class="plans">
+        <article class="plan">
+          <div class="plan-title"><div><h3>အခမဲ့အစီအစဉ်</h3><p>ဆိုင်စာရင်းကို အခြေခံမှ စတင်စီမံရန်</p></div><span class="badge">အခမဲ့</span></div>
+          <div class="price">အခမဲ့</div><div class="price-sub">လစဉ်ကြေးမရှိပါ</div>
+          <div class="limit-box"><div class="limit"><strong>၂၀ မျိုး</strong><span>ကုန်ပစ္စည်း အများဆုံး</span></div><div class="limit"><strong>၁၀၀ ခု</strong><span>တစ်လ အရောင်းမှတ်တမ်း</span></div></div>
+          <div class="list-title">ယခုအသုံးပြုနိုင်သည်</div>
+          <ul class="features"><li><span class="check">✓</span><span>အရောင်း၊ ကုန်ပစ္စည်းနှင့် အသုံးစရိတ် မှတ်တမ်းတင်ခြင်း</span></li><li><span class="check">✓</span><span>နေ့စဉ်နှင့် လစဉ်စာရင်းအနှစ်ချုပ်</span></li><li><span class="check">✓</span><span>ဒေတာကို အရန်ဖိုင်အဖြစ် သိမ်းပြီး ပြန်ထည့်ခြင်း</span></li></ul>
+          <p class="plan-note">အကောင့်ဖွင့်ရန် မလိုပါ။ သင့်စာရင်းများကို အသုံးပြုနေသော ဘရောက်ဇာထဲတွင်သာ သိမ်းဆည်းပါသည်။ ကန့်သတ်ချက်များကိုလည်း ဤစာမျက်နှာတွင်သာ စစ်ဆေးပြီး အကောင့်အခြေပြု နောက်ခံကန့်သတ်မှု မဟုတ်ပါ။</p>
+          <a class="cta" href="gifthub-free.html">အခမဲ့ စတင်အသုံးပြုရန်</a>
+        </article>
+        <article class="plan premium">
+          <div class="plan-title"><div><h3>အဆင့်မြင့်အစီအစဉ်</h3><p>လုပ်ငန်းတိုးချဲ့ပြီး စီမံခန့်ခွဲမှု ပိုမိုလုပ်ဆောင်ရန်</p></div><span class="badge">အဆင့်မြင့်</span></div>
+          <div class="price" style="font-size:22px">ဈေးနှုန်း မသတ်မှတ်ရသေး</div><div class="price-sub">ဝယ်ယူခြင်းနှင့် ငွေပေးချေခြင်း မဖွင့်ရသေးပါ</div>
+          <div class="limit-box"><div class="limit"><strong>ကန့်သတ်မရှိဟု</strong><span>အကြံပြုထားသော ကုန်ပစ္စည်းကန့်သတ်ချက်</span></div><div class="limit"><strong>ကန့်သတ်မရှိဟု</strong><span>အကြံပြုထားသော အရောင်းကန့်သတ်ချက်</span></div></div>
+          <div class="list-title">အသင့်ရှိသော ကိရိယာများ</div>
+          <ul class="features"><li><span class="check">✓</span><span>အခမဲ့အစီအစဉ်၏ အခြေခံကိရိယာများ</span></li><li><span class="check">✓</span><span>အရောင်းစာရင်းကို ဖိုင်အဖြစ် ထုတ်ယူခြင်း</span></li><li><span class="check">✓</span><span>ပစ္စည်းလက်ကျန်နှင့် ပစ္စည်းနည်းနေမှုကို ကြည့်ခြင်း</span></li></ul>
+          <div class="list-title">တည်ဆောက်ရန် စီစဉ်ထားသည်</div>
+          <ul class="features"><li><span class="pending">◷</span><span>အမြတ်နှင့် အရောင်းကို အသေးစိတ် ခွဲခြမ်းစိတ်ဖြာခြင်း <span class="status-label">မရသေး</span></span></li><li><span class="pending">◷</span><span>ဝယ်သူ၊ အကြွေးနှင့် ပြန်ဆပ်မှုစာရင်း <span class="status-label">မရသေး</span></span></li><li><span class="pending">◷</span><span>အွန်လိုင်းအရန်သိမ်းခြင်း၊ စက်များအကြား ချိတ်ဆက်ခြင်းနှင့် ဝန်ထမ်းအကောင့် <span class="status-label">မရသေး</span></span></li></ul>
+          <p class="plan-note">ကန့်သတ်ချက်မရှိခြင်းသည် အကြံပြုထားသည့် အစီအစဉ်ဖော်ပြချက်သာဖြစ်ပြီး လက်ရှိတွင် အကောင့်အလိုက် ကန့်သတ်မှုကို အမှန်တကယ် မကျင့်သုံးသေးပါ။</p>
+          <a class="cta" href="https://t.me/toxic989" target="_blank" rel="noopener noreferrer">Premium စတင်ချိန်မှာ သိလိုပါက စာရင်းသွင်းရန် · @toxic989</a>
+        </article>
+      </div>
+      <aside class="notice"><span class="notice-icon">ⓘ</span><span><b>အဆင့်မြင့်အစီအစဉ်အကြောင်း:</b> ခလုတ်ကိုနှိပ်ပြီး @toxic989 ထံ စာပို့ကာ စတင်ချိန်တွင် သိလိုကြောင်း အသိပေးနိုင်ပါသည်။ ဤသည် စိတ်ဝင်စားမှုစာရင်းပေးခြင်းသာဖြစ်ပြီး အော်ဒါတင်ခြင်း သို့မဟုတ် ငွေပေးချေခြင်း မဟုတ်ပါ။ စတင်မည့်ရက်၊ ဈေးနှုန်းနှင့် ငွေပေးချေမှုနည်းလမ်းကို မသတ်မှတ်ရသေးပါ။</span></aside>
+    </section>
+    <section id="faq" aria-labelledby="faqHeading"><div class="section-head"><div><h2 id="faqHeading">မေးလေ့ရှိသော မေးခွန်းများ</h2><p>အသုံးပြုမှုအခြေအနေကို တိတိကျကျ ဖော်ပြထားပါတယ်။</p></div></div><div class="faq"><article><h3>အခမဲ့အစီအစဉ်ကို ချက်ချင်းသုံးလို့ရပါသလား?</h3><p>ရပါတယ်။ အခမဲ့အသုံးပြုရန် ခလုတ်ကိုနှိပ်ပြီး ကုန်ပစ္စည်း၊ အရောင်းနဲ့ အသုံးစရိတ်ကို စတင်မှတ်တမ်းတင်နိုင်ပါတယ်။</p></article><article><h3>စာရင်းဒေတာကို ဘယ်မှာသိမ်းထားပါသလဲ?</h3><p>သင်အသုံးပြုနေတဲ့ ဖုန်း သို့မဟုတ် ကွန်ပျူတာရဲ့ ဘရောက်ဇာထဲမှာသာ သိမ်းထားပါတယ်။ ဒေတာမပျောက်စေဖို့ အရန်ဖိုင်ကို ပုံမှန်သိမ်းပါ။</p></article><article><h3>အဆင့်မြင့်အစီအစဉ်ကို အခုဝယ်လို့ရပါသလား?</h3><p>မရသေးပါ။ ဈေးနှုန်းနဲ့ ငွေပေးချေမှုကို မသတ်မှတ်ရသေးတဲ့အတွက် တယ်လီဂရမ်ကနေ စုံစမ်းမေးမြန်းနိုင်ပါတယ်။</p></article><article><h3>အဆင့်မြင့်အစီအစဉ်မှာ ဖော်ပြထားတဲ့ လုပ်ဆောင်ချက်အားလုံး သုံးလို့ရပါသလား?</h3><p>မရသေးပါ။ အသင့်ရှိတဲ့ ကိရိယာနဲ့ စီစဉ်ဆဲအရာတွေကို အစီအစဉ်ကတ်ထဲမှာ သီးခြားဖော်ပြထားပါတယ်။</p></article></div></section>
+    <div class="closing"><strong>သိမ်းဆည်းမှုအရေးကြီးချက်:</strong> အခမဲ့စာရင်းစာမျက်နှာသည် စက်တွင်းသိမ်းဆည်းမှုကို သုံးပြီး အကောင့်၊ အွန်လိုင်းဒေတာချိတ်ဆက်မှု သို့မဟုတ် စကားဝှက်ကာကွယ်မှု မပါဝင်ပါ။ ဤစာမျက်နှာမှ စီမံခန့်ခွဲရေးစာမျက်နှာသို့ လင့်ခ်မပေးထားပါ။</div>
+  </main>
+  <footer class="wrap"><span>ဆိုင်စာရင်း · အစီအစဉ်အချက်အလက်</span><span>ဒေတာကို အရန်ဖိုင်ဖြင့် ကိုယ်တိုင်သိမ်းဆည်းပါ။</span></footer>
+
+<script>
+(() => {
+  const status = document.getElementById('offlineCacheStatus');
+  if (!status) return;
+  if (!('serviceWorker' in navigator) || !window.isSecureContext) {
+    status.textContent = 'ဤဘရောက်ဇာ သို့မဟုတ် ချိတ်ဆက်မှုတွင် အော့ဖ်လိုင်းသိမ်းဆည်းမှု မရနိုင်ပါ။';
+    return;
+  }
+  status.textContent = 'အော့ဖ်လိုင်းသုံးရန် စာမျက်နှာများကို သိမ်းဆည်းနေသည်…';
+  const base = new URL('./', document.baseURI);
+  navigator.serviceWorker.register(new URL('sw.js', base), { scope: base.pathname })
+    .then(() => navigator.serviceWorker.ready)
+    .then(() => {
+      status.textContent = 'ဤဘရောက်ဇာတွင် အော့ဖ်လိုင်းသုံးရန် စာမျက်နှာနှစ်ခုလုံး သိမ်းပြီးပါပြီ။';
+    })
+    .catch(() => {
+      status.textContent = 'မသိမ်းနိုင်သေးပါ။ အင်တာနက်ချိတ်ဆက်ပြီး ဤစာမျက်နှာကို ပြန်ဖွင့်ပါ။';
+    });
+})();
+</script>
+</body>
+</html>
